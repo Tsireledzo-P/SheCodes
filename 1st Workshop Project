@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width,intial-scale=1.0" />
+    <title> Crazy Burgers🍔</title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(to bottom, #85af0d, #446222)
+    }
+
+    h1 {
+        text-align: center;
+        color: #eaaf3e;
+    }
+
+    h2 {
+        text-align: center;
+        color: #323b43;
+    }
+
+    hr {
+        color: #323b43;
+        line-height: 1px auto;
+    }
+
+    .URL {
+        color: #eaaf3e;
+
+    }
+
+    .Resturants {
+        color: #323b43;
+    }
+
+    .TryResturants {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+    }
+
+    .moreinfo {
+        font-size: medium;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .coder {
+        font-family: monospace;
+        text-align: right;
+        opacity: 0.7;
+        font-size: 16px;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 12px;
+    }
+
+    p {
+        color: #323b43;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    button {
+        margin: 20px auto;
+        display: block;
+        color: #f3cd20;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: 1px solid #f3cd20;
+        border-radius: 30px 30px 30px 30px;
+        box-shadow: 10px 10px 5px rgba(50, 51, 54, 0.233);
+        transition: all 200ms ease-in-out;
+        background: #323b43;
+    }
+
+    button:hover {
+        background: #f3cd20;
+        color: #323b43;
+        border: 1px solid #323b43;
+    }
+</style>
+
+<body>
+    <h1>
+        <strong>🍔Amazing Burgers🍔</strong>
+    </h1>
+    <h2>
+        <em>In and around Cape Town</em>
+    </h2>
+    <hr>
+    <div class="container">
+        <img src="https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg" alt="Burgers"
+            width="220" />
+        <p>
+            <strong>
+                The love for trying new burgers and new resturants every now and then has grown tromendously around Cape
+                Town.<br>
+                The 'hype' around it started after covid restrictions were lifted and resturants could accomidate
+                people,
+                with resturants like The Dogs Bollocks, Zuney, Burgers & Brews, Buns & Beyond as well as Bao Burger just
+                to
+                name
+                a few in and around the CBD and the rest of the city.<br>
+                Both residents and tourist's have made an art out of trying new food in a new resturant.
+                Burgers are not only mouthwatering but also a culinary masterpiece that captivates both the eye and the
+                taste buds.
+                Let's be honest the first meal that sets the standard for the resturant will always be a juicy burger😊.
+            </strong>
+        </p>
+        <img src="https://assets.happyplates.com/media/1611/koreanischer-kimchi-burger-1630050551398.jpg?twic=v1/quality=80/focus=50px50p/cover=524x788/resize=1080"
+            alt="Burger" width="210" />
+    </div>
+    <button id="MyFaveBurger">
+        Talk to us
+    </button>
+    <hr>
+    <p class="moreinfo">
+        Book your next burger:
+    </p>
+    <div class="TryResturants">
+        <span class="Resturants">The Dogs Bollocks</span>
+        <a href="https://www.yardco.co.za/" target="-blank" class="URL">Yardco</a><br>
+        <span class="Resturants">Zuney</span>
+        <a href="https://zuneywagyu.com/burgers/" target="-blank" class="URL">Wagyu Burger Bar</a><br>
+        <span class="Resturants">Burges & Brews</span>
+        <a href="burgerbrews.co.za" target="-blank" class="URL">burger brews </a><br>
+    </div>
+    <p class="coder">
+        Coded by Tsireledzo Murema
+    </p>
+    <script>
+        function talkToUs() {
+            let name = prompt("Hi, What is your name ?");
+            let area = prompt("Are you currently in Cape Town?");
+
+            if (area === "No") {
+                alert(name + " " + "Come tour the city and taste our delicious burgers😉.");
+            }
+            else {
+                alert("Try a burger at The Dogs Bollocks");
+            }
+        }
+
+        let button = document.querySelector("button");
+        button.addEventListener("click", talkToUs);
+    </script>
+
+</body>
+
+</html>
