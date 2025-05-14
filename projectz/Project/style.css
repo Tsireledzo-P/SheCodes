@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background: navajowhite;
+    padding: 30px;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background:palevioletred;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: navajowhite;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 15px;
+  }
+  
+  input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+  }
+  
+  button {
+    margin-top: 20px;
+    background: navajowhite;
+    color: palevioletred;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: palevioletred;
+    color: navajowhite;
+  }
+  
+  #results {
+    margin-top: 30px;
+  }
+  
